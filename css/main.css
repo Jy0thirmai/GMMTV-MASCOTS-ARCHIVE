@@ -217,3 +217,10 @@ width: 100%;
   }
 
 }
+.card,
+.focus-card,
+img {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
