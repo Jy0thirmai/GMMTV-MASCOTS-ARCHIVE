@@ -164,65 +164,46 @@ width: 100%;
 
 @media (max-width: 768px) {
 
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 14px;
-    padding: 14px;
+  html {
+    font-size: 19px;
   }
 
-  /* make text readable */
   body {
-    font-size: 16px;
+    font-size: 19px;
   }
 
-  .card span {
-    font-size: 0.85rem;
-    padding: 5px 8px;
-  }
-
-  /*  fix popup readability */
-  .focus-container {
-    flex-direction: column;
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 16px;
     padding: 16px;
   }
 
+  .card span {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .focus-container {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .focus-card {
+    width: 90%;
+    height: auto;
+  }
+
   .info-panel {
     width: 95%;
-    max-height: 55vh;
-    padding: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  /* title scaling */
-  .content h1 {
-    font-size: 1.8rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    line-height: 1.4;
+    max-height: 60vh;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 18px;
   }
 
   .info-panel button {
-    font-size: 1rem;
-    padding: 10px 18px;
+    font-size: 1.1rem;
+    padding: 12px 18px;
   }
-  html {
-  font-size: 18px;
-}
-
-body {
-  font-size: 18px;
-}
-
-.info-panel {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.card span {
-  font-size: 0.95rem;
-}
 }
