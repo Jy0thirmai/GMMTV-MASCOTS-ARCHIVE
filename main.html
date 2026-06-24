@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =======================
+       META / PAGE INFO
+  ======================== -->
+  <meta charset="UTF-8">
+  <title>Mascot Archive</title>
+
+  <!-- Main Page Styles -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <!-- =======================
+           MAIN GRID
+       Mascot Cards Section
+  ======================== -->
+  <div class="grid-container" id="grid"></div>
+
+  <!-- =======================
+            OVERLAY
+       Dark background layer
+  ======================== -->
+  <div class="overlay hidden" id="overlay"></div>
+
+  <!-- =======================
+        FOCUS / DETAIL VIEW
+       Selected mascot view
+  ======================== -->
+  <div class="focus-container hidden" id="focusContainer">
+
+    <!-- Selected Mascot Image -->
+    <div class="focus-card" id="focusCard"></div>
+
+    <!-- Mascot Info Panel -->
+    <div class="info-panel">
+
+      <!-- Mascot Name -->
+      <h2 id="m-name"></h2>
+
+      <!-- Mascot Info Text -->
+      <p id="m-info"></p>
+
+      <!-- Close Button -->
+      <button onclick="closeFocus()">Close</button>
+
+    </div>
+
+  </div>
+
+  <!-- =======================
+          DISCLAIMER
+       Fan-made notice footer
+  ======================== -->
+  <div class="disclaimer-main">
+    Disclaimer: This archive is fan-made and intended for informational purposes only. All mascots and related content belong to their respective creators and fandom communities.
+  </div>
+
+  <!-- =======================
+            SCRIPTS
+  ======================== -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
