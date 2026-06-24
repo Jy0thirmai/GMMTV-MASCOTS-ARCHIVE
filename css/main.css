@@ -217,10 +217,15 @@ width: 100%;
   }
 
 }
-.card,
-.focus-card,
-img {
+* {
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
