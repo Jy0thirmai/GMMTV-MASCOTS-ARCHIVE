@@ -173,7 +173,7 @@ width: 100%;
   }
 
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 16px;
   }
@@ -183,10 +183,13 @@ width: 100%;
     padding: 6px 10px;
   }
 
+  /* POPUP LAYOUT */
   .focus-container {
     flex-direction: column;
-    gap: 18px;
-    padding: 18px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
   }
 
   .focus-card {
@@ -194,16 +197,23 @@ width: 100%;
     height: auto;
   }
 
+  .focus-card img {
+    height: auto;
+    max-height: 40vh;
+  }
+
   .info-panel {
     width: 95%;
-    max-height: 60vh;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    padding: 18px;
+    max-height: 55vh;
+    overflow-y: auto;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding: 16px;
   }
 
   .info-panel button {
     font-size: 1.1rem;
     padding: 12px 18px;
   }
+
 }
