@@ -164,68 +164,69 @@ width: 100%;
 
 @media (max-width: 768px) {
 
-  html {
-    font-size: 19px;
-  }
-
-  body {
-    font-size: 19px;
-  }
+  /* GRID */
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    padding: 16px;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .card {
+    aspect-ratio: 3 / 4;
   }
 
   .card span {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 6px 10px;
   }
 
-  /* POPUP LAYOUT */
+  /* POPUP */
+
   .focus-container {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 12px;
-    gap: 12px;
+
+    padding: 15px;
+
+    overflow-y: auto;
   }
 
   .focus-card {
-    width: 90%;
+    width: 90vw;
+    max-width: 320px;
+
     height: auto;
+    aspect-ratio: 4 / 5;
   }
 
   .focus-card img {
-    height: auto;
-    max-height: 40vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .info-panel {
-    width: 95%;
-    max-height: 55vh;
-    overflow-y: auto;
-    font-size: 1.05rem;
+    width: 90vw;
+    max-width: 500px;
+
+    max-height: none;
+
+    font-size: 1rem;
     line-height: 1.6;
-    padding: 16px;
+
+    padding: 18px;
+  }
+
+  .info-panel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
   .info-panel button {
-    font-size: 1.1rem;
-    padding: 12px 18px;
+    width: 100%;
+    font-size: 1rem;
   }
 
-}
-* {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-img {
-  -webkit-user-drag: none;
-  pointer-events: none;
 }

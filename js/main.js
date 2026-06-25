@@ -39,6 +39,7 @@ mascots.forEach((mascot) => {
       <b>Inspiration:</b> ${mascot.inspiration}<br><br>
       <b>Details:</b> ${mascot.details}
     `;
+    document.querySelector(".info-panel").scrollTop = 0;
   });
 
   grid.appendChild(card);
